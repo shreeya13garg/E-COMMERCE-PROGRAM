@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vendor.Final">
+   <children>
+      <Label layoutX="22.0" layoutY="196.0" prefHeight="90.0" prefWidth="571.0" text="   YOU HAVE SUCCESFULLY COMPLETED YOUR TRANSACTION" textFill="#31974e">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="15.0" layoutY="251.0" prefHeight="70.0" prefWidth="571.0" text="     YOUR PRODUCT WILL REACH YOUR DESTINATION IN 1-2 DAYS">
+         <font>
+            <Font name="AppleMyungjo Regular" size="16.0" />
+         </font></Label>
+      <Button layoutX="507.0" layoutY="342.0" mnemonicParsing="false" onAction="#Proceed" text="Exit" />
+      <ImageView fx:id="img1" fitHeight="127.0" fitWidth="173.0" layoutX="214.0" layoutY="92.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tick.jpg" />
+         </image>
+      </ImageView>
+
+   </children>
+</AnchorPane>

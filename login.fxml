@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="662.0" prefWidth="964.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vendor.LoginController">
+   <AnchorPane prefHeight="686.0" prefWidth="238.0" style="-fx-background-color: white;">
+      <children>
+         <ImageView fitHeight="252.0" fitWidth="160.0" layoutX="39.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@images/LOGO.PNG" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+   <ImageView fx:id="bg" fitHeight="686.0" fitWidth="965.0" pickOnBounds="true">
+      <image>
+         <Image url="@images/bg.jpg" />
+      </image>
+      <effect>
+         <GaussianBlur radius="0.0" />
+      </effect>
+   </ImageView>
+        <Label layoutX="286.0" layoutY="266.0" prefHeight="43.0" prefWidth="153.0" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="293.0" layoutY="345.0" prefHeight="21.0" prefWidth="119.0" text="NAME:" textFill="WHITE">
+      <font>
+         <Font name="Franklin Gothic Medium Italic" size="12.0" />
+      </font>
+   </Label>
+      <Label layoutX="293.0" layoutY="428.0" prefHeight="21.0" prefWidth="119.0" text="PASSWORD:" textFill="WHITE">
+      <font>
+         <Font name="Franklin Gothic Medium Italic" size="12.0" />
+      </font></Label>
+      <TextField fx:id="name" layoutX="378.0" layoutY="340.0" onMouseClicked="#Backgrounden" onMouseDragEntered="#Backgrounden" onMouseDragExited="#Backgroundex" onMouseEntered="#Backgrounden" onMouseExited="#Backgroundex" opacity="0.41" prefHeight="31.0" prefWidth="366.0" AnchorPane.bottomAnchor="318.0" AnchorPane.leftAnchor="378.0" AnchorPane.rightAnchor="221.0" AnchorPane.topAnchor="340.0" />
+      <Label fx:id="new1" layoutX="261.0" layoutY="587.0" onMouseClicked="#register" text="Not a member? Click here to register." textFill="WHITE">
+      <font>
+         <Font size="11.0" />
+      </font></Label>
+   <Label layoutX="293.0" layoutY="464.0" prefHeight="21.0" prefWidth="119.0" text="LOGIN AS:" textFill="WHITE">
+      <font>
+         <Font name="Franklin Gothic Medium Italic" size="12.0" />
+      </font></Label>
+   <RadioButton fx:id="d" layoutX="594.0" layoutY="464.0" mnemonicParsing="false" text="Delivery Guy" textFill="WHITE">
+      <toggleGroup>
+         <ToggleGroup fx:id="S" />
+      </toggleGroup>
+   </RadioButton>
+   <Button layoutX="426.0" layoutY="534.0" mnemonicParsing="false" onMouseClicked="#login" opacity="0.68" prefHeight="34.0" prefWidth="182.0" text="SUBMIT">
+      <font>
+         <Font size="11.0" />
+      </font></Button>
+   <Label layoutX="464.0" layoutY="145.0" opacity="0.61" prefHeight="21.0" prefWidth="318.0" text="To fulfill all your needs..anytime..anywhere" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font></Label>
+   <RadioButton fx:id="b" layoutX="434.0" layoutY="502.0" mnemonicParsing="false" text="Bulk Buyer" textFill="WHITE" toggleGroup="$S" />
+   <RadioButton fx:id="f" layoutX="557.0" layoutY="502.0" mnemonicParsing="false" text="Fest Organizer" textFill="WHITE" toggleGroup="$S" />
+   <ImageView fitHeight="82.0" fitWidth="91.0" layoutX="344.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/profile.png" />
+      </image>
+   </ImageView>
+   <RadioButton fx:id="c" layoutX="468.0" layoutY="462.0" mnemonicParsing="false" text="Customer" textFill="WHITE" toggleGroup="$S" />
+   <RadioButton fx:id="s" layoutX="373.0" layoutY="462.0" mnemonicParsing="false" selected="true" text="Seller" textFill="WHITE" toggleGroup="$S" />
+   <Label layoutX="356.0" layoutY="75.0" prefHeight="57.0" prefWidth="310.0" text="Karigar Bazaar" textFill="WHITE">
+      <font>
+         <Font name="Candara Light Italic" size="48.0" />
+      </font>
+   </Label>
+   <PasswordField fx:id="pass" layoutX="380.0" layoutY="423.0" onMouseClicked="#Backgrounden" onMouseDragEntered="#Backgrounden" onMouseDragExited="#Backgroundex" onMouseEntered="#Backgrounden" onMouseExited="#Backgroundex" opacity="0.45" prefHeight="31.0" prefWidth="366.0" />
+   <Label layoutX="260.0" layoutY="621.0" onMouseClicked="#fest" prefHeight="21.0" prefWidth="310.0" text="Click here to know about the upcoming fests." textFill="WHITE">
+      <font>
+         <Font size="11.0" />
+      </font></Label>
+   <Label layoutX="293.0" layoutY="386.0" prefHeight="21.0" prefWidth="119.0" text="EMAIL:" textFill="WHITE">
+      <font>
+         <Font name="Franklin Gothic Medium Italic" size="12.0" />
+      </font>
+   </Label>
+   <TextField fx:id="email" layoutX="380.0" layoutY="379.0" onMouseClicked="#Backgrounden" onMouseDragEntered="#Backgrounden" onMouseDragExited="#Backgroundex" onMouseEntered="#Backgrounden" onMouseExited="#Backgroundex" opacity="0.36" prefHeight="34.0" prefWidth="366.0" />   
+</AnchorPane>
